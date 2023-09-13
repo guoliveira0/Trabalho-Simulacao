@@ -42,3 +42,9 @@ a:hover {
 tr:hover{
   background-color: #4e7683;
 }
+.div1{
+  background-color: #7ac7e0;
+  margin-right: 1200px;
+  border: thin black solid;
+  margin-top: 30px;
+}

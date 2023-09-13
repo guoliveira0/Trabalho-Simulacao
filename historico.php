@@ -32,11 +32,13 @@
         else{
             
             if(isset($s->initialcontribution)){
+                echo "<div class=\"div1\">";
                 echo "<p>Cliente: {$s->client}</p>";
                 echo "<p>Aporte inicial: {$s->initialcontribution}</p>";
                 echo "<p>Aporte mensal: {$s->contribution}</p>";
                 echo "<p>Rendimento: {$s->income}</p>";
                 echo "<p>Período: {$s->period}</p>";
+                echo "</div>";
             }
         }
     }

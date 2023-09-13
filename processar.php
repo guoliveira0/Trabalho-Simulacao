@@ -14,6 +14,7 @@
         <h2>Resultado</h2>
     </header>
     <main>
+        
         <?php
         //require_once '../class/autoloader.class.php';
         require_once 'class/r.class.php';
@@ -30,12 +31,14 @@
         $s->period = $_GET['period'];
         $s->income = $_GET['income'];
         $id = R::store($s);
+        echo "<div class=\"div1\">";
         echo "<p>ID da simulação: $id</p>";
         echo "<p>Cliente: {$_GET['client']}</p>";
         echo "<p>Aporte inicial: {$_GET['initialContribution']}</p>";
         echo "<p>Aporte mensal: {$_GET['contribution']}</p>";
         echo "<p>Rendimento: {$_GET['income']}</p>";
         echo "<p>Período: {$_GET['period']}</p>";
+        echo "</div>";
 
 
 
